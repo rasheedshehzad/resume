@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Shehzad Rasheed – Resume</title>
 
   <!-- Font Awesome -->
@@ -10,39 +10,86 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  
+
   <style>
-    /* Base resets */
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    /* Global reset */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
     body {
       font-family: 'Poppins', sans-serif;
       background: #f4f4f4;
       color: #333;
       padding: 20px;
       max-width: 900px;
-      margin: auto;
+      margin: 30px auto 50px;
       line-height: 1.5;
     }
-    h1, h2, h3 { color: #13579c; margin-bottom: 8px; }
-    a { color: #007bff; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    ul { margin-left: 20px; margin-bottom: 16px; }
-    
-    .header { text-align: center; margin-bottom: 30px; }
-    .header h1 { font-size: 2.5rem; }
-    .header h2 { font-size: 1.5rem; font-weight: 500; }
-    .fa-ul { display: inline-block; text-align: left; margin-top: 8px; }
 
-    .fa-li .icon { filter: hue-rotate(30deg) saturate(150%); }
-    .icon-red { color: #7b1717; }
-    .icon-green { color: #27ae60; }
-    .icon-yellow { color: #f1c40f; }
-    .icon-blue { color: #3498db; }
+    h1, h2 {
+      color: #13579c;
+      margin-bottom: 8px;
+    }
 
-    .content .section { margin-bottom: 30px; }
-    
-    .company { font-weight: 600; color: #2568ab; }
-    .city, .date { float: right; color: #555; font-style: italic; }
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      list-style-type: none;
+      margin-bottom: 16px;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .header h1 {
+      font-size: 2.5rem;
+      font-weight: 900;
+    }
+    .header h2 {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+
+    .fa-ul {
+      display: inline-block;
+      text-align: left;
+      margin-top: 8px;
+    }
+    .fa-li {
+      position: relative;
+      left: -1.5em;
+    }
+    .icon {
+      filter: hue-rotate(30deg) saturate(150%);
+      width: 1em;
+      height: 1em;
+    }
+
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .column {
+      flex: 1 1 300px;
+    }
+
+    .section + .section {
+      margin-top: 20px;
+    }
+
     .job-line {
       display: flex;
       justify-content: space-between;
@@ -50,56 +97,159 @@
       padding-bottom: 4px;
       margin-bottom: 8px;
     }
-    .job-title { font-weight: 550; color: #333; }
-    .skills ul, .skillsec ul { margin-left: 20px; }
 
-    /* Responsive */
+    .job-title {
+      font-weight: 550;
+      color: #333;
+    }
+
+    .date {
+      color: #555;
+      font-style: italic;
+    }
+
+    .company {
+      display: block;
+      font-weight: 600;
+      color: #2568ab;
+      margin-bottom: 4px;
+    }
+
+    .city {
+      float: right;
+      color: #555;
+      font-style: italic;
+    }
+
     @media (max-width: 800px) {
-      body { padding: 10px; }
-      .header h1 { font-size: 1.8rem; }
-      .header h2 { font-size: 1.2rem; }
-      .job-line { flex-direction: column; }
-      .city, .date { float: none; margin-top: 4px; }
+      body {
+        padding: 10px;
+      }
+      .header h1 {
+        font-size: 1.8rem;
+      }
+      .header h2 {
+        font-size: 1.2rem;
+      }
+      .job-line {
+        flex-direction: column;
+        gap: 4px;
+      }
+      .city {
+        float: none;
+        display: block;
+        margin-top: 4px;
+      }
     }
   </style>
 </head>
 
 <body>
-
   <div class="header">
     <h1>Shehzad Rasheed</h1>
-    <h2>Electrical &amp; Computer Engineer</h2>
+    <h2>Electrical & Computer Engineer</h2>
+
     <ul class="fa-ul">
-      <li><span class="fa-li"><i class="fa-solid fa-envelope icon icon-red"></i></span><a href="mailto:shehzadrasheed@outlook.com">shehzadrasheed@outlook.com</a></li>
-      <li><span class="fa-li"><i class="fa-brands fa-linkedin icon icon-blue"></i></span><a href="https://www.linkedin.com/in/shehzad-rasheed-6614a18a/" target="_blank">linkedin.com/in/shehzad‑rasheed</a></li>
-      <li><span class="fa-li"><i class="fa-brands fa-github icon icon-blue"></i></span><a href="https://github.com/rasheedshehzad" target="_blank">github.com/rasheedshehzad</a></li>
-      <li><span class="fa-li"><i class="fa-solid fa-phone icon icon-green"></i></span>(+1) 585‑267‑0095</li>
-      <li><span class="fa-li"><i class="fa-solid fa-location-dot icon icon-blue"></i></span>Austin, TX, United States</li>
+      <li>
+        <span class="fa-li"><i class="fa-solid fa-envelope icon icon-red"></i></span>
+        <a href="mailto:shehzadrasheed@outlook.com">shehzadrasheed@outlook.com</a>
+      </li>
+      <li>
+        <span class="fa-li"><i class="fa-brands fa-linkedin icon icon-blue"></i></span>
+        <a href="https://www.linkedin.com/in/shehzad-rasheed-6614a18a/" target="_blank">linkedin.com/in/shehzad‑rasheed</a>
+      </li>
+      <li>
+        <span class="fa-li"><i class="fa-brands fa-github icon icon-blue"></i></span>
+        <a href="https://github.com/rasheedshehzad" target="_blank">github.com/rasheedshehzad</a>
+      </li>
+      <li>
+        <span class="fa-li"><i class="fa-solid fa-phone icon icon-green"></i></span>
+        (+1) 585‑267‑0095
+      </li>
+      <li>
+        <span class="fa-li"><i class="fa-solid fa-location-dot icon icon-blue"></i></span>
+        Austin, TX, United States
+      </li>
     </ul>
   </div>
 
   <div class="content">
-    <div class="section profsec">
-      <h2>Profile</h2>
-      <p>Electrical and Computer Engineer with 11 years of experience designing and implementing complex embedded systems. Experienced in the complete product development lifecycle, from interpreting requirements and defining functional specifications to delivering robust, high-performance solutions.</p>
+    <div class="column">
+      <div class="section profsec">
+        <h2>Profile</h2>
+        <p>Electrical and Computer Engineer with 11 years of experience designing and implementing complex embedded systems, from requirements to delivery of robust, high‑performance solutions.</p>
+      </div>
+
+      <div class="section skillsec">
+        <h2>Skills</h2>
+        <ul>
+          <li><strong>Areas of Expertise</strong>
+            <ul>
+              <li>Digital signal processing algorithms</li>
+              <li>Embedded system design</li>
+              <li>FPGA board and RTL design</li>
+            </ul>
+          </li>
+          <li><strong>Engineering Software</strong>
+            <ul>
+              <li>Xilinx Vivado/ISE, Intel Quartus, Lattice Diamond, ModelSim, QuestaSim, OrCAD</li>
+              <li>Microsoft Visual Studio, CCS, Pspice, AVR Studio, Reqtify</li>
+            </ul>
+          </li>
+          <li><strong>Programming / Scripting Languages</strong>
+            <ul>
+              <li>Verilog/VHDL, C/C++, Python, Assembly, MATLAB, Tcl</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </div>
 
-    <div class="section skillsec">
-      <h2>Skills</h2>
-      <ul>
-        <li><strong>Areas of Expertise</strong>
-          <ul>
-            <li>Digital signal processing algorithms</li>
-            <li>Embedded system design</li>
-            <li>FPGA board and RTL design</li>
-          </ul>
-        </li>
-        <li><strong>Engineering Software</strong>
-          <ul>
-            <li>Xilinx Vivado/ISE, Intel Quartus, Lattice Diamond, ModelSim, QuestaSim, OrCAD</li>
-            <li>Microsoft Visual Studio, CCS, Pspice, AVR Studio, Reqtify</li>
-          </ul>
-        </li>
-        <li><strong>Programming/Scripting Languages</strong>
-          <ul><li>Verilog/VHDL, C/C++, Python, Assembly, MATLAB, Tcl</li></ul>
-       
+    <div class="column">
+      <div class="section">
+        <h2>Experience</h2>
+
+        <!-- Job 1 -->
+        <div class="job-line">
+          <span class="job-title">Senior FPGA Design Engineer</span>
+          <span class="date">Aug 2021 – Current</span>
+        </div>
+        <span class="company">Abaco Systems | AMETEK, Inc.</span>
+        <span class="city">Austin, TX</span>
+        <ul>
+          <li>SOSA-based platform design for SDR, RADAR, and imaging applications.</li>
+          <li>Micro-architecture design for FPGAs, software interfacing, and testing.</li>
+          <li>Development/validation of FPGA firmware for high‑speed digital interfaces:
+            <ul>
+              <li>Ultra‑high‑speed ADC/DAC integration with FPGAs</li>
+              <li>Ethernet 1G/10G/40G/100G – JESD204C – Aurora</li>
+              <li>High‑speed memory interfaces (DDR3/DDR4)</li>
+            </ul>
+          </li>
+          <li>FPGA pin plan, schematic review, bring‑up and board validation.</li>
+          <li>Customer support for Abaco product integrations.</li>
+        </ul>
+
+        <!-- Job 2 -->
+        <div class="job-line">
+          <span class="job-title">Hardware Architect – Team Lead</span>
+          <span class="date">Dec 2019 – Aug 2021</span>
+        </div>
+        <span class="company">Alstom Signalling, Inc.</span>
+        <span class="city">Rochester, NY</span>
+        <ul>
+          <li>Development & validation of safety-critical onboard railroad systems.</li>
+          <li>Environmental, functional, and EMC validation plan execution.</li>
+          <li>FPGA design (VHDL) and validation execution.</li>
+          <li>Maintained electronic design & validation documents.</li>
+          <li>Defined hardware/FPGA requirements from system spec (Reqtify).</li>
+          <li>Managed CR cycle and engineered change orders (ECO).</li>
+          <li>Test procedures and benches; supported serial production.</li>
+        </ul>
+
+        <!-- Add more jobs below similarly -->
+      </div>
+    </div>
+  </div>
+</body>
+</html>
