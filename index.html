@@ -1,251 +1,397 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Shehzad Rasheed – Resume</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shehzad Rasheed - Resume</title>
+    <style>
+    
+        h1, h2, h3 {
+            color: #13579c;
+            
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .contact {
+            font-size: 0.95em;
+            margin-bottom: 10px;
+        }
+        .job-title {
+            font-weight: bold;
+        }
+        .date {
+            float: right;
+            font-style: italic;
+        }
 
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/825a513a15.js" crossorigin="anonymous"></script>
+        /* Make all icons colorful */
+        .icon {
+        filter: hue-rotate(30deg) saturate(150%);
+        /* Optional: use multiple classes for varied colors */
+        }
+        .icon-red    { color: #7b1717; }
+        .icon-green  { color: #27ae60; }
+        .icon-yellow { color: #f1c40f; }
+        .icon-blue   { color: #3498db; }
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        /* Style email addresses and links in blue */
+        a[href^="mailto:"],
+        a[href^="http"],
+        a.custom-link {
+        color: #007bff;
+        text-decoration: none;
+        }
+        a[href^="mailto:"]:hover,
+        a[href^="http"]:hover,
+        a.custom-link:hover {
+        text-decoration: underline;
+        }
 
-  <style>
-    /* Global reset */
-    *, *::before, *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+.section h2 {
+  color: #13579c;
+ /* border-bottom: 2px solid #13579c;*/
+}
 
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: #f4f4f4;
-      color: #333;
-      padding: 20px;
-      max-width: 900px;
-      margin: 30px auto 50px;
-      line-height: 1.5;
-    }
+.job-line {
+  display: flex;
+  align-items: center; /* vertical align center */
+  border-bottom: 2px solid #13579c;
+ 
+}
 
-    h1, h2 {
-      color: #13579c;
-      margin-bottom: 8px;
-    }
 
-    a {
-      color: #007bff;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
+.job-title {
+  color: #333;        /* Accent blue for role */
+  font-weight: 550;
+}
 
-    ul {
-      list-style-type: none;
-      margin-bottom: 16px;
-    }
+.date {
+    float: right;
+  color: #555;           /* Muted dark gray for dates */
+  margin-left: 8px;
+  font-style: italic;
+}
 
-    .header {
-      text-align: center;
-      margin-bottom: 30px;
-    }
+.company {
+    
+  color: #2568ab;        /* LinkedIn/brand blue for companies */
+  font-weight: 570;
+  
+}
 
-    .header h1 {
-      font-size: 2.5rem;
-      font-weight: 900;
-    }
-    .header h2 {
-      font-size: 1.5rem;
-      font-weight: 500;
-    }
+.section ul {
+  margin-top: 4px;
+  margin-bottom: 16px;
+}
+.city {
+    float: right;
+  margin-left: 8px; /* pushes the city to the right */
+  color: #555;
+  font-style: italic;
+}
 
-    .fa-ul {
-      display: inline-block;
-      text-align: left;
-      margin-top: 8px;
-    }
-    .fa-li {
-      position: relative;
-      left: -1.5em;
-    }
-    .icon {
-      filter: hue-rotate(30deg) saturate(150%);
-      width: 1em;
-      height: 1em;
-    }
 
-    .content {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
+.section ul li {
+  color: #333;
+  line-height: 1.5;
+}
+/* Overall section spacing */
+.section p {
+  margin-bottom: 4px;
+}
+    </style>
+</head>
 
-    .column {
-      flex: 1 1 300px;
-    }
-
-    .section + .section {
-      margin-top: 20px;
-    }
-
-    .job-line {
-      display: flex;
-      justify-content: space-between;
-      border-bottom: 2px solid #13579c;
-      padding-bottom: 4px;
-      margin-bottom: 8px;
-    }
-
-    .job-title {
-      font-weight: 550;
-      color: #333;
-    }
-
-    .date {
-      color: #555;
-      font-style: italic;
-    }
-
-    .company {
-      display: block;
-      font-weight: 600;
-      color: #2568ab;
-      margin-bottom: 4px;
-    }
-
-    .city {
-      float: right;
-      color: #555;
-      font-style: italic;
-    }
-
-    @media (max-width: 800px) {
-      body {
-        padding: 10px;
-      }
-      .header h1 {
-        font-size: 1.8rem;
-      }
-      .header h2 {
-        font-size: 1.2rem;
-      }
-      .job-line {
-        flex-direction: column;
-        gap: 4px;
-      }
-      .city {
-        float: none;
-        display: block;
-        margin-top: 4px;
-      }
-    }
-  </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY RESUME</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/825a513a15.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <div class="header">
-    <h1>Shehzad Rasheed</h1>
-    <h2>Electrical & Computer Engineer</h2>
-
-    <ul class="fa-ul">
-      <li>
-        <span class="fa-li"><i class="fa-solid fa-envelope icon icon-red"></i></span>
-        <a href="mailto:shehzadrasheed@outlook.com">shehzadrasheed@outlook.com</a>
-      </li>
-      <li>
-        <span class="fa-li"><i class="fa-brands fa-linkedin icon icon-blue"></i></span>
-        <a href="https://www.linkedin.com/in/shehzad-rasheed-6614a18a/" target="_blank">linkedin.com/in/shehzad‑rasheed</a>
-      </li>
-      <li>
-        <span class="fa-li"><i class="fa-brands fa-github icon icon-blue"></i></span>
-        <a href="https://github.com/rasheedshehzad" target="_blank">github.com/rasheedshehzad</a>
-      </li>
-      <li>
-        <span class="fa-li"><i class="fa-solid fa-phone icon icon-green"></i></span>
-        (+1) 585‑267‑0095
-      </li>
-      <li>
-        <span class="fa-li"><i class="fa-solid fa-location-dot icon icon-blue"></i></span>
-        Austin, TX, United States
-      </li>
-    </ul>
+    <div class="subheader">
+      <h1>SHEHZAD RASHEED</h1>
+      <h2>Electrical Computer Engineer</h2>
+      <ul class="fa-ul">
+        <li>
+          <span class="fa-li">
+            <i class="fa-solid icon-red fa-envelope fa-shake"></i>
+          </span>
+          <a href="mailto:shehzadrasheed@outlook.com">shehzadrasheed@outlook.com</a>
+        </li>
+        <li>
+          <span class="fa-li">
+            <i class="fa-brands icon-blue fa-linkedin icon-linkedin fa-beat"></i>
+          </span>
+          <a href="https://www.linkedin.com/in/shehzad-rasheed-6614a18a/" target="_blank">linkedin.com/in/shehehzadrasheed</a>
+        </li>
+        <li>
+          <span class="fa-li">
+            <i class="fa-brands fa-github fa-beat"></i>
+          </span>
+          <a href="https://github.com/rasheedshehzad" target="_blank">github.com/rasheedshehzad</a>
+        </li>
+        <li>
+          <span class="fa-li">
+            <i class="fa-solid icon-green fa-phone fa-bounce"></i>
+          </span>
+          (+1) 585 - 267 - 0095
+        </li>
+        <li>
+          <span class="fa-li">
+            <i class="fa-solid icon-blue fa-location-dot fa-flip"></i>
+          </span>
+          Austin, TX, United States
+        </li>
+      </ul>
+    </div>
   </div>
 
-  <div class="content">
-      <div class="section profsec">
-        <h2>Profile</h2>
-        <p>Electrical and Computer Engineer with 11 years of experience designing and implementing complex embedded systems, from requirements to delivery of robust, high‑performance solutions.</p>
-      </div>
 
-      <div class="section skillsec">
-        <h2>Skills</h2>
-        <ul>
-          <li><strong>Areas of Expertise</strong>
+        <div class="content">
+
+                <div class="profsec">
+                    <h2 class="profile">
+                        PROFILE
+                    </h2>
+                    <p>Electrical and Computer Engineer with 11 years of experience designing and implementing complex 
+                        embedded systems. Experienced in the complete product development lifecycle, from interpreting 
+                        requirements and defining functional specifications to delivering robust, high-performance solutions.
+                    </p>
+                </div>
+
+                <div class="skillsec">
+                    <h2 class="skills">
+                        SKILLS
+                    </h2>
+                    <ul class="listSkills">
+                        <li><strong>Areas of Expertise includes:</strong></li>
+                        <ul>
+                            <li>Digital signal processing algorithm.</li>
+                            <li>Embedded system design.</li>
+                            <li>FPGA board and RTL design.</li>
+                        </ul>                        
+                        <li><strong>Engineering Softwares:</strong></li>
+                        <ul>
+                            <li> Xilinx Vivado/ISE, Intel Quartus, Lattice Diamond, Modelsim</li>
+                            <li> QuestaSim, OrCAD, Microsoft Visual Studio, CCS, Pspice, AVR Studio, Reqtify.</li>
+                        </ul>   
+                        <li><strong>Programming / Scripting Languages:</strong></li>
+                        <ul>
+                             <li>Verilog/VHDL, C++/C, Python, Assembly,MATLAB, Tcl.</li>
+                        </ul> 
+                    </ul>
+
+<div class="section">
+  <h2>Experience</h2>
+  <p>
+    <span class="company">Abaco Systems | AMETEK, Inc.</span>
+    <span class="city">Austin, TX</span><br>
+    <p class="job-line"></p>
+    <span class="job-title">Senior FPGA Design Engineer</span>
+    <span class="date">Aug 2021 – Current</span><br>
+
+
+
+  <ul>
+        <li>SOSA based platform design for SDR, RADAR, and imaging applications.</li>
+        <li>Micro architecture design for FPGAs, software application interfacing and testing.</li>
+        <li> Development/validation of FPGA firmware for high‑speed digital interfaces.
             <ul>
-              <li>Digital signal processing algorithms</li>
-              <li>Embedded system design</li>
-              <li>FPGA board and RTL design</li>
+            <li>Ultra‑high‑speed ADC/DAC integration with FPGAs.</li>
+            <li>Ethernet 1G/10G/40G/100G – JESD204C – Aurora.</li>
+            <li>High‑speed memory interfaces (DDR3/DDR4).</li>
             </ul>
-          </li>
-          <li><strong>Engineering Software</strong>
-            <ul>
-              <li>Xilinx Vivado/ISE, Intel Quartus, Lattice Diamond, ModelSim, QuestaSim, OrCAD</li>
-              <li>Microsoft Visual Studio, CCS, Pspice, AVR Studio, Reqtify</li>
-            </ul>
-          </li>
-          <li><strong>Programming / Scripting Languages</strong>
-            <ul>
-              <li>Verilog/VHDL, C/C++, Python, Assembly, MATLAB, Tcl</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+        <li>FPGA pin plan, schematic review, bring‑up and board validation phase.</li>
+        <li>Customer support for Abaco products integration into their systems.</li>
+</ul>
 
-      <div class="section">
-        <h2>Experience</h2>
 
-        <!-- Job 1 -->
-        <div class="job-line">
-          <span class="job-title">Senior FPGA Design Engineer</span>
-          <span class="date">Aug 2021 – Current</span>
-        </div>
-        <span class="company">Abaco Systems | AMETEK, Inc.</span>
-        <span class="city">Austin, TX</span>
-        <ul>
-          <li>SOSA-based platform design for SDR, RADAR, and imaging applications.</li>
-          <li>Micro-architecture design for FPGAs, software interfacing, and testing.</li>
-          <li>Development/validation of FPGA firmware for high‑speed digital interfaces:
-            <ul>
-              <li>Ultra‑high‑speed ADC/DAC integration with FPGAs</li>
-              <li>Ethernet 1G/10G/40G/100G – JESD204C – Aurora</li>
-              <li>High‑speed memory interfaces (DDR3/DDR4)</li>
-            </ul>
-          </li>
-          <li>FPGA pin plan, schematic review, bring‑up and board validation.</li>
-          <li>Customer support for Abaco product integrations.</li>
-        </ul>
+   <p>
+    <span class="company">Alstom Signalling, Inc.</span>
+    <span class="city">Rochester, NY</span>
+    <p class="job-line"></p>
+    <span class="job-title">Hardware Architect - Team Lead </span>
+    <span class="date">Dec 2019 – Aug 2021</span><br>
+    
 
-        <!-- Job 2 -->
-        <div class="job-line">
-          <span class="job-title">Hardware Architect – Team Lead</span>
-          <span class="date">Dec 2019 – Aug 2021</span>
-        </div>
-        <span class="company">Alstom Signalling, Inc.</span>
-        <span class="city">Rochester, NY</span>
-        <ul>
-          <li>Development & validation of safety-critical onboard railroad systems.</li>
-          <li>Environmental, functional, and EMC validation plan execution.</li>
-          <li>FPGA design (VHDL) and validation execution.</li>
-          <li>Maintained electronic design & validation documents.</li>
-          <li>Defined hardware/FPGA requirements from system spec (Reqtify).</li>
-          <li>Managed CR cycle and engineered change orders (ECO).</li>
-          <li>Test procedures and benches; supported serial production.</li>
-        </ul>
 
-        <!-- Add more jobs below similarly -->
-      </div>
-  </div>
+  <ul>
+    <li>Development and validation activities for safety-critical onboard railroad systems.</li>
+    <li>Development and execution of the environmental/functional/EMC validation plans.</li>
+    <li>Execution of FPGA design (VHDL) and validation activities.</li>
+    <li>Produce and maintain the electronic design and validation documents.</li>
+    <li>Define the electronic hardware/FPGA requirements from the system level requirements (Reqtify).</li> 
+    <li>Execution of change request cycle (CR) and creation of engineering change order (ECO). </li>
+    <li>Define serial test procedures and automated test benches; monitor and support the serial production.</li>
+  </ul>
+
+  <p>
+
+  <p>
+    <span class="company">Re-Engineering with Research (RWR)</span>
+    <span class="city">Islamabad, Pak</span>
+    <p class="job-line"></p>
+    <span class="job-title">Technical Team Lead (Hardware/DSP) </span>
+    <span class="date">Jan 2018 – April 2019</span><br>
+
+  <ul>
+     <li>Design and development of real-time digital communication receivers using FPGA/DSP/ADC.</li>
+ <li>Development of hardware and programmable component requirement specifications.</li>
+ <li>Design complex digital signal processing algorithms as per requirement specifications.</li>
+ <li>Design microarchitectures, estimate the resource utilization and power budget.</li>
+ <li>Support in the development of real-time embedded systems.</li>
+ <li>Develop the automated test benches for the FPGA validation, perform system integration.</li>
+  </ul>
+  <p> 
+
+    <p>
+    <span class="company">Re-Engineering with Research (RWR)</span>
+    <span class="city">Islamabad, Pak</span>
+    <p class="job-line"></p>
+    <span class="job-title">Design Engineer (Hardware/DSP) </span>
+    <span class="date">Sep 2014 – Jan 2018</span><br>
+
+
+
+  <ul>
+    <li>Digital signal processing-based algorithm development (MATLAB).</li>
+    <li>Development of FPGA and DSP firmware (Verilog/C++) and interfacing with RF components. </li>
+    <li>FPGA/DSP design testing using COTS hardware.</li>
+    <li>Schematic design, component selections, BOM generation, and pin planning for custom hardware (Cadence OrCAD). </li>
+    <li>FPGAs and ADCs based PCB bring-up and hardware testing using RF synthesizers, pulse generators, oscilloscopes, spectrum analyzer, and VNA.</li>
+    <li>Board to board link tests, synchronization, and calibration logic development.</li> </ul>
+  <p> 
+</div>
+
+
+      
 </body>
+
 </html>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');    * {
+        box-sizing: border-box;
+    }
+
+    .container {
+        font-family:"Poppins", sans-serif;
+        background-color: #F5F5F5;
+        color:	#404040;
+        padding: 45px;
+        margin: 30px 390px 400px 450px;
+        border-radius: 25px;
+        line-height: 22px;
+        font-size: 15px;
+        text-align: justify;
+        box-shadow: 7px 7px 7px 7px gray;
+    }
+
+    a {
+        font-family:"Poppins", sans-serif;
+        color:	#404040;
+        text-decoration:none;
+    }
+
+    .header {
+        padding: 0 25px 0 25px;
+    }
+
+    .subheader {
+        float: right;
+    }
+
+    .subheader h1 {
+        font-size: 45px;
+        font-weight: 900;
+    }
+
+    .subheader h2 {
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .fa-ul {
+        line-height: 30px;
+    }
+
+    .content {
+        display: flex;
+        padding-top: 25px;
+    }
+
+    .column {
+        flex: 1;
+        padding: 20px;
+        margin-right: 45px;
+    }
+
+    img {
+        border-radius: 10px;
+    }
+
+    @media only screen and (max-width: 1000px) {
+    .container {
+        font-size: 14px; 
+        padding: 20px; 
+        margin: 10px;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+        padding: 0; 
+    }
+
+    .subheader {
+        margin-top: 15px; 
+        text-indent: 0; 
+        padding-left: 0;
+
+    }
+
+    .subheader h1 {
+        font-size: 30px; 
+        margin: 0;
+        text-indent: 0; 
+    }
+
+    .subheader h2 {
+        font-size: 24px; 
+        margin: 5px 0; 
+        text-indent: 0; 
+    }
+
+    .fa-ul {
+        line-height: 20px;
+    }
+
+    img {
+        width: 150px;
+        height: auto; 
+        border-radius: 10px; 
+    }
+
+    .content {
+        flex-direction: column; 
+        padding-top: 20px; 
+    }
+
+    .column {
+        margin-right: 0;
+        margin-bottom: 20px; 
+    }
+}
+</style>
+
